@@ -12,7 +12,7 @@ var myPow1 = (x,n) =>{
   let p = Math.abs(n);
   let res = p%2===0 ? myPow1(x*x, p/2) : myPow1(x*x, (p-1)/2) *x;
 
-  return n > 0 ? res : 1/res;
+  return res > 0 ? res : 1/res;
 
 
 }
