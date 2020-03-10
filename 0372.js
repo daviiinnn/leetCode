@@ -3,6 +3,7 @@
  * @param {number[]} b
  * @return {number}
  */
+//super power
 var spow = function(a, b) {
   const m = 1337;
   var dig = 0;
@@ -27,20 +28,3 @@ var spow = function(a, b) {
   return ppiw(a % m, bmod)
 
 };
-
-var a = [1,2];
-var b = a.toString().replace(/,/g, '');
-
-var pow1 = (x,n) =>{
-  const m = 1337;
-  let p = n.toString().replace(/,/g, '');
-  if (n === 0) return 1;
-  let res = p%2===0 ? pow1((x*x) % m, p/2) : pow1((x*x)%m, (p-1)/2) *x;
-
-  return res > 0 ? res % m : 1/res;
-
-
-}
-
-var k = 2147483647;
-var z = [2,0,0];
