@@ -11,5 +11,3 @@ var gr = function(strs) {
     }
     return Object.values(res);
 };
-
-var k = ["eat", "tea", "tan", "ate", "nat", "bat"];
