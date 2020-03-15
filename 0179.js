@@ -1,3 +1,7 @@
+/**
+ * @param {number[]} nums
+ * @return {string}
+ */
 var largestNumber = function(nums) {
     if (nums.join('') == 0)
         return '0'
@@ -5,6 +9,3 @@ var largestNumber = function(nums) {
     res.sort((a, b) => (b + a) - (a + b))
     return res.join('')
 };
-
-var k = [3,30,34,5,9];
-var m = k.toString().split(',');
