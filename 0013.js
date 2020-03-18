@@ -18,7 +18,3 @@ var romao = function(s) {
   }
     return res;
 };
-
-var c = "VEMKEMKE"
-
-console.log(c[1])
