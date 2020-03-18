@@ -18,6 +18,3 @@ var isp = function(x) {
 
   return true;
 };
-
-
-var k = 121;
