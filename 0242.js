@@ -9,13 +9,3 @@ var isAnagram = function(s, t) {
 
   return ress === rest ? true : false;
 };
-
-
-
-var k = "anagram"
-var c = "nagaram"
-
-var kan = k.split('').sort().join('');
-var can = c.split('').sort().join('');
-
-var sol = (kan == can)
