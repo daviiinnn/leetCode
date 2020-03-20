@@ -1,24 +1,21 @@
 /**
- * @param {string} s
- * @return {number}
+ * @param {number[]} nums
+ * @return {number[]}
  */
-var romao = function(s) {
-  const roman = { 'I':1,                       
-                  'V':5,
-                  'X':10,
-                  'L':50,
-                  'C':100,
-                  'D':500,
-                  'M':1000 };
-  var res = 0;
-
-  for(let i = 0; i< s.length; i++){
-    roman[s[i]] < roman[s[i + 1]] ? res -= roman[s[i]]
-    : res += roman[s[i]];
-  }
-    return res;
+var smal= function(nums) {
+  //Array.from() = a method that creates a new, shallow-copied Array instance from an array-like or iterable object.
+   const sorted = Array.from(nums).sort((a,b) => a - b);
+   var res = [];
+   for(let i = 0; i<nums.length; i++){
+     let value = sorted.indexOf(nums[i]);
+     res.push(value);
+   }
+   return res;
 };
 
-var c = "VEMKEMKE"
-
-console.log(c[1])
+var k = [8,1,2,2,3];
+var c = Array.from(k).sort((a,b) => a - b);
+var cok = c.indexOf(8)
+console.log(smal(k))
+console.log(cok)
+console.log(c)
