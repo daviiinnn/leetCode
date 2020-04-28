@@ -1,13 +1,16 @@
-/**
- * @param {string} num1
- * @param {string} num2
- * @return {string}
- */
-var multiply = function(num1, num2) {
-  var res = BigInt(num2) * BigInt(num1)
+happyNumber = (x) => {
+  let n = x.toString().split("");
 
-  return `${res}`
-    
-};
+  multiplyArr = (it, ind, arr) => {
+    arr[ind] = it ** 2;
+  }
+  n.forEach(multiplyArr);
+  let c = n.reduce((a,b) => a + b, 0)
+  
+  return (c === 1 || c === 7) ? true 
+  : (c < 10) ? false
+  : happNumber(c);
+}
 
-multiply("123456789","987654321");
+
+happyNumber(101);
